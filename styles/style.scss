@@ -323,7 +323,7 @@ section.about-us {
 
   picture.small-front {
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
     right: 332px;
     z-index: 2;
     height: 300px;
@@ -336,7 +336,7 @@ section.about-us {
     position: absolute;
     z-index: 2;
     right: 0;
-    top: -36px;
+    top: -66px;
     transform: translateX(10.4%) scale(0.8);
   }
 }
@@ -1053,6 +1053,13 @@ footer {
     }
   }
 
+  section.about-us {
+    picture.small-front {
+      left: 45%;
+      top: 180px;
+    }
+  }
+
   section.order {
     .row {
       margin-left: 30px;
@@ -1456,6 +1463,11 @@ footer {
 
 
 @media (max-width: 575px) {
+  #loader img {
+    width: 100px;
+    height: 100px;
+  }
+
   section h2 {margin: 40px; font-size: 24px}
 
   .header-background-image {

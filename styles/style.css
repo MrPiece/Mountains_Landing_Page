@@ -347,7 +347,7 @@ section.about-us i.world-map-vector {
 
 section.about-us picture.small-front {
   position: absolute;
-  bottom: 40px;
+  bottom: 120px;
   right: 332px;
   z-index: 2;
   height: 300px;
@@ -362,7 +362,7 @@ section.about-us img.big-behind {
   position: absolute;
   z-index: 2;
   right: 0;
-  top: -36px;
+  top: -66px;
   -webkit-transform: translateX(10.4%) scale(0.8);
           transform: translateX(10.4%) scale(0.8);
 }
@@ -1215,6 +1215,10 @@ footer .container .clients-count span {
     left: 43.35%;
     top: -89px;
   }
+  section.about-us picture.small-front {
+    left: 45%;
+    top: 180px;
+  }
   section.order .row {
     margin-left: 30px;
   }
@@ -1633,6 +1637,10 @@ footer .container .clients-count span {
 }
 
 @media (max-width: 575px) {
+  #loader img {
+    width: 100px;
+    height: 100px;
+  }
   section h2 {
     margin: 40px;
     font-size: 24px;
