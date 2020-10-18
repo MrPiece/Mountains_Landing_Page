@@ -1,37 +1,43 @@
-@import url('bootstrap-grid.min.css');
-@import url('../fonts/timesnewromanpsmt_bigfontsite.com.ttf');
+@import url("bootstrap-grid.min.css");
+@import url("../fonts/timesnewromanpsmt_bigfontsite.com.ttf");
 @font-face {
-  font-family: 'Open Sans Extrabold';
-  src: url('../fonts/open_sans_extrabold.ttf') format('truetype');
+  font-family: "Open Sans Extrabold";
+  src: url("../fonts/open_sans_extrabold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'League Gothic';
-  src: url('../fonts/LeagueGothic-Regular.otf') format('truetype');
+  font-family: "League Gothic";
+  src: url("../fonts/LeagueGothic-Regular.otf") format("truetype");
 }
 @font-face {
-  font-family: "Bringin"; 
-  src: url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.eot"); 
-  src: url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.eot?#iefix") format("embedded-opentype"), 
-       url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff2") format("woff2"),
-       url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff") format("woff"), 
-       url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.ttf") format("truetype"), 
-       url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.svg#Bringin") format("svg"); 
+  font-family: "Bringin";
+  src: url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.eot");
+  src: url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.svg#Bringin")
+      format("svg");
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway&family=Roboto:wght@300;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway&family=Roboto:wght@300;400;900&display=swap");
 
 $blue: #36aeea;
 $brandingGrey: #95a5ad;
 $grey: #9daeb6;
 
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-shadow: none;
   outline: none;
   border: none;
   box-sizing: border-box;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 1em;
 }
 
@@ -45,7 +51,7 @@ h1 {
   letter-spacing: 6px;
   color: white;
   text-transform: uppercase;
-  
+
   .cursive {
     display: block;
     color: $blue;
@@ -53,7 +59,7 @@ h1 {
     letter-spacing: normal;
     font-family: Bringin;
     font-size: 66px;
-    margin-top: -43px;
+    margin-top: -33px;
     margin-left: 7px;
     font-style: normal;
     font-weight: 400;
@@ -73,7 +79,7 @@ h2 {
   margin-bottom: 71px;
 
   &::before {
-    content: url('/images/waves_vector.png');
+    content: url("/images/waves_vector.png");
     position: absolute;
     top: -53px;
     left: 50%;
@@ -91,7 +97,7 @@ h3 {
   color: #2c2e37;
 
   &::before {
-    content: url('/images/waves_vector.png');
+    content: url("/images/waves_vector.png");
     position: absolute;
     top: -53px;
   }
@@ -125,7 +131,7 @@ h3 {
 }
 
 i.world-map-vector {
-  background-image: url('/images/world_map_vector.png');
+  background-image: url("/images/world_map_vector.png");
 }
 
 main {
@@ -133,14 +139,8 @@ main {
   z-index: 10;
 }
 
-
-
-
-
-
-
 .header-background-image {
-  background-image: url('/images/header_background.png');
+  background-image: url("/images/header_background.png");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -160,7 +160,9 @@ header {
     backdrop-filter: blur(5px) brightness(1.05);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
 
-    .humburger-toggle {display: none;}
+    .humburger-toggle {
+      display: none;
+    }
 
     .container {
       position: relative;
@@ -216,12 +218,12 @@ header {
           color: $blue;
         }
       }
-  
+
       &.active {
         border-bottom: 2px solid $blue;
         transform: translateY(4px);
       }
-  
+
       &.call-button {
         font-family: Raleway;
         font-size: 12px;
@@ -233,7 +235,7 @@ header {
         position: absolute;
         right: 15px;
         transition: 0.3s;
-        
+
         &:hover {
           transform: none;
           border-bottom: 3px solid $blue;
@@ -264,7 +266,7 @@ header {
         font-weight: 400;
         max-width: 434px;
       }
-  
+
       .button {
         padding: 19px 78px;
         margin-top: 27px;
@@ -294,9 +296,13 @@ section.about-us {
   background-color: #f6f4f4;
   position: relative;
 
-  .content {max-width: 352px}
+  .content {
+    max-width: 352px;
+  }
 
-  .text {margin-top: 15px}
+  .text {
+    margin-top: 15px;
+  }
 
   .button {
     font-size: 12px;
@@ -341,7 +347,6 @@ section.about-us {
   }
 }
 
-
 section.our-journal {
   display: flex;
   justify-content: center;
@@ -367,7 +372,8 @@ section.our-journal {
       order: 1;
     }
 
-    .thumbnail, .description {
+    .thumbnail,
+    .description {
       position: relative;
     }
 
@@ -387,17 +393,17 @@ section.our-journal {
       background-repeat: no-repeat;
 
       &.heart {
-        background-image: url('/images/heart_vector.png');
+        background-image: url("/images/heart_vector.png");
         height: 81px;
         width: 81px;
       }
       &.waterdrop {
-        background-image: url('/images/waterdrop_vector.png');
+        background-image: url("/images/waterdrop_vector.png");
         height: 74px;
         width: 59px;
       }
       &.leaf {
-        background-image: url('/images/leaf_vector.png');
+        background-image: url("/images/leaf_vector.png");
         height: 65px;
         width: 65px;
       }
@@ -482,9 +488,8 @@ section.our-journal {
   }
 }
 
-
 section.order {
-  background-image: url('/images/order-background.png');
+  background-image: url("/images/order-background.png");
   height: 650px;
   display: flex;
   align-items: center;
@@ -530,7 +535,7 @@ section.order {
     margin-top: 21px;
 
     i.lock {
-      background-image: url('/images/lock_vector.png');
+      background-image: url("/images/lock_vector.png");
       height: 16px;
       width: 14px;
       display: inline-block;
@@ -539,14 +544,13 @@ section.order {
   }
 }
 
-
 section.how-we-work {
   min-height: 534px;
   margin-top: 114px;
 
   .row {
     position: relative;
-    
+
     .roots-union-line {
       position: absolute;
       background-image: linear-gradient(to right, #f0f3f6 90%, #fff 0%);
@@ -608,16 +612,16 @@ section.how-we-work {
         }
 
         .tick {
-          background-image: url('/images/tick_hexagon.png');
+          background-image: url("/images/tick_hexagon.png");
         }
         .book {
-          background-image: url('/images/book_hexagon.png');
+          background-image: url("/images/book_hexagon.png");
         }
         .portfolio {
-          background-image: url('/images/portfolio_hexagon.png');
+          background-image: url("/images/portfolio_hexagon.png");
         }
         .document {
-          background-image: url('/images/document_hexagon.png');
+          background-image: url("/images/document_hexagon.png");
         }
       }
 
@@ -641,10 +645,9 @@ section.how-we-work {
   }
 }
 
-
 section.travel-with-us {
   margin-top: 148px;
-  background-image: url('/images/travel_with_us.jpg');
+  background-image: url("/images/travel_with_us.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
@@ -668,27 +671,39 @@ section.travel-with-us {
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 20px;
-      &:last-child {margin-right: 0}
+      &:last-child {
+        margin-right: 0;
+      }
       padding: 14px 19px;
       background-color: #fff;
       transition: background-color 0.3s;
 
-      &:hover {background-color: #666}
+      &:hover {
+        background-color: #666;
+      }
 
-      &-carpathian {background-image: url('/images/card_carpathian.png');}
-      &-alps {background-image: url('/images/card_alps.png');}
-      &-pyrenees {background-image: url('/images/card_pyrenees.png');}
-      &-rocky {background-image: url('/images/card_rocky.png');}
-      &-kavkaz {background-image: url('/images/card_kavkaz.png');}
+      &-carpathian {
+        background-image: url("/images/card_carpathian.png");
+      }
+      &-alps {
+        background-image: url("/images/card_alps.png");
+      }
+      &-pyrenees {
+        background-image: url("/images/card_pyrenees.png");
+      }
+      &-rocky {
+        background-image: url("/images/card_rocky.png");
+      }
+      &-kavkaz {
+        background-image: url("/images/card_kavkaz.png");
+      }
 
       .rating {
-
-
         .star {
           display: inline-block;
           width: 19px;
           height: 19px;
-          background-image: url('/images/star.png');
+          background-image: url("/images/star.png");
         }
       }
 
@@ -722,7 +737,7 @@ section.travel-with-us {
         .new-price {
           color: #ffffff;
           font-size: 26px;
-          font-family: 'Open Sans Extrabold';
+          font-family: "Open Sans Extrabold";
           line-height: 22px;
         }
       }
@@ -738,7 +753,6 @@ section.travel-with-us {
   }
 }
 
-
 section.gallery {
   margin-top: 114px;
   margin-bottom: 79px;
@@ -750,7 +764,9 @@ section.gallery {
 
     .column {
       margin-right: 29px;
-      &:last-child {margin-right: 0}
+      &:last-child {
+        margin-right: 0;
+      }
 
       img {
         width: 100%;
@@ -760,11 +776,12 @@ section.gallery {
 
     .photo {
       margin-bottom: 30px;
-      &:last-child {margin-bottom: 0}
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
 
 section.client-brands {
   background-color: #f8f9fa;
@@ -780,45 +797,44 @@ section.client-brands {
   }
 
   .adobe {
-    background-image: url('/images/adobe_logo.png');
+    background-image: url("/images/adobe_logo.png");
     width: 38px;
     height: 34px;
   }
 
   .google {
-    background-image: url('/images/google_logo.png');
+    background-image: url("/images/google_logo.png");
     background-size: contain;
     width: 80px;
     height: 28px;
   }
 
   .slack {
-    background-image: url('/images/slack_logo.png');
+    background-image: url("/images/slack_logo.png");
     width: 80px;
     height: 24px;
   }
 
   .facebook {
-    background-image: url('/images/facebook_logo.png');
+    background-image: url("/images/facebook_logo.png");
     background-size: contain;
     width: 80px;
     height: 18px;
   }
 
   .spotify {
-    background-image: url('/images/spotify_logo.png');
+    background-image: url("/images/spotify_logo.png");
     width: 80px;
     height: 24px;
   }
 
   .nike {
-    background-image: url('/images/nike_logo.png');
+    background-image: url("/images/nike_logo.png");
     background-size: contain;
     width: 70px;
     height: 26px;
   }
 }
-
 
 section.our-clients-say {
   margin-top: 112px;
@@ -827,7 +843,9 @@ section.our-clients-say {
 
   .client-quote {
     margin-top: 132px;
-    &:first-child {margin-right: 55px}
+    &:first-child {
+      margin-right: 55px;
+    }
 
     q {
       display: block;
@@ -855,7 +873,7 @@ section.our-clients-say {
       margin-top: 29px;
       display: flex;
       align-items: center;
-    
+
       .info {
         color: $blue;
         font-size: 16px;
@@ -884,7 +902,9 @@ section.our-clients-say {
   border-radius: 8px;
 
   h2 {
-    &::before {content: ""}
+    &::before {
+      content: "";
+    }
 
     color: $blue;
     font-family: "Open Sans";
@@ -918,7 +938,9 @@ section.our-clients-say {
       border-radius: 4px;
       padding: 24px 19px;
       margin-bottom: 20px;
-      &:last-child {margin-bottom: 0}
+      &:last-child {
+        margin-bottom: 0;
+      }
       box-shadow: none;
       transition: 0.3s;
 
@@ -969,7 +991,9 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       margin-right: 5px;
-      &:last-child {margin-right: 0}
+      &:last-child {
+        margin-right: 0;
+      }
       position: relative;
       z-index: 2;
 
@@ -989,9 +1013,15 @@ footer {
       }
     }
 
-    .twitter-link {background-image: url('/images/twitter_icon.png')}
-    .facebook-link {background-image: url('/images/facebook_icon.png')}
-    .vk-link {background-image: url('/images/vk_icon.png')}
+    .twitter-link {
+      background-image: url("/images/twitter_icon.png");
+    }
+    .facebook-link {
+      background-image: url("/images/facebook_icon.png");
+    }
+    .vk-link {
+      background-image: url("/images/vk_icon.png");
+    }
 
     .clients-count {
       color: #6ca7b9;
@@ -999,7 +1029,9 @@ footer {
       font-size: 27px;
       font-weight: 900;
 
-      span {margin-left: 5px;}
+      span {
+        margin-left: 5px;
+      }
     }
   }
 }
@@ -1036,7 +1068,6 @@ footer {
   z-index: 1;
 }
 
-
 @media (max-width: 1200px) {
   .header-background-image {
     background-position: 53% 0;
@@ -1044,7 +1075,6 @@ footer {
 
   header {
     .intro {
-
       .background-man {
         position: absolute;
         left: 43.35%;
@@ -1082,14 +1112,13 @@ footer {
           font-size: 22px;
         }
       }
-    } 
+    }
   }
 
   .contacts-card {
     backdrop-filter: brightness(0.95) blur(5px);
   }
 }
-
 
 @media (max-width: 992px) {
   h3::before {
@@ -1099,7 +1128,7 @@ footer {
   }
 
   .header-background-image {
-    background-image: url('/images/header-background-normal.png');
+    background-image: url("/images/header-background-normal.png");
     background-position: center;
   }
 
@@ -1108,9 +1137,15 @@ footer {
       a {
         transform: translateY(3px);
 
-        &:hover {transform: translateY(4px)}
-        &.active {transform: translateY(3px)}
-        &.branding {transform: translateY(1px)}
+        &:hover {
+          transform: translateY(4px);
+        }
+        &.active {
+          transform: translateY(3px);
+        }
+        &.branding {
+          transform: translateY(1px);
+        }
       }
 
       .branding {
@@ -1125,7 +1160,10 @@ footer {
     .intro {
       backdrop-filter: brightness(0.85);
 
-      .background-man, .border-bottom {display: none}
+      .background-man,
+      .border-bottom {
+        display: none;
+      }
 
       .content {
         text-align: center;
@@ -1135,10 +1173,13 @@ footer {
         justify-content: space-between;
       }
 
-      .content .button, .content .text {margin: auto}
+      .content .button,
+      .content .text {
+        margin: auto;
+      }
 
       .content .text {
-        color: #fff; 
+        color: #fff;
         opacity: 1;
         margin-bottom: 20px;
       }
@@ -1182,13 +1223,15 @@ footer {
     }
   }
 
-  section.our-journal {margin-top: 100px;}
+  section.our-journal {
+    margin-top: 100px;
+  }
   section.our-journal .cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
 
     .thumbnail {
-      display: flex; 
+      display: flex;
       flex-direction: column;
     }
 
@@ -1207,7 +1250,9 @@ footer {
       order: 2;
     }
 
-    .thumbnail.card-3 {order: 2}
+    .thumbnail.card-3 {
+      order: 2;
+    }
 
     .description.card-3 {
       order: 3;
@@ -1226,9 +1271,13 @@ footer {
   }
 
   section.how-we-work {
-    .roots-union-line {display: none}
+    .roots-union-line {
+      display: none;
+    }
 
-    .branch {margin-bottom: 50px}
+    .branch {
+      margin-bottom: 50px;
+    }
   }
 
   section.travel-with-us {
@@ -1243,14 +1292,20 @@ footer {
       grid-template-columns: repeat(3, 1fr);
       gap: 15px;
 
-      .card {margin: 0}
+      .card {
+        margin: 0;
+      }
     }
   }
 
   section.gallery {
     .photos-grid {
-      .column {margin-right: 10px}
-      .photo {margin-bottom: 10px}
+      .column {
+        margin-right: 10px;
+      }
+      .photo {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -1258,25 +1313,37 @@ footer {
     .client-quote {
       margin-top: 50px;
 
-      q {font-size: 16px}
+      q {
+        font-size: 16px;
+      }
 
-      .author .info {font-size: 15px}
+      .author .info {
+        font-size: 15px;
+      }
     }
   }
 
   footer {
     .container {
-      .copyright {font-size: 16px}
+      .copyright {
+        font-size: 16px;
+      }
 
-      .clients-count {font-size: 24px}
+      .clients-count {
+        font-size: 24px;
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
-  .header-background-image {max-height: 500px}
+  .header-background-image {
+    max-height: 500px;
+  }
 
-  .slideout-panel {box-shadow: 0 0 10px #888}
+  .slideout-panel {
+    box-shadow: 0 0 10px #888;
+  }
 
   #slideout-menu {
     background-color: #f6f4f4;
@@ -1292,12 +1359,18 @@ footer {
       margin-top: 40px;
       text-transform: uppercase;
 
-      &:hover {color: $blue}
-      &:first-child {margin-top: 0}
+      &:hover {
+        color: $blue;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 
-  main {overflow: hidden}
+  main {
+    overflow: hidden;
+  }
 
   header {
     nav.navbar {
@@ -1311,10 +1384,7 @@ footer {
       align-items: center;
 
       .menu {
-        position: absolute;
-        z-index: 5;
-        bottom: 100%;
-        opacity: 0;
+        display: none;
       }
 
       .hamburger-button {
@@ -1336,7 +1406,9 @@ footer {
         }
 
         &.active {
-          .line:nth-child(2) {opacity: 0}
+          .line:nth-child(2) {
+            opacity: 0;
+          }
 
           .line:first-child {
             transform: translateY(10px) rotate(45deg);
@@ -1355,12 +1427,18 @@ footer {
       .content {
         h1 {
           font-size: 40px;
-          .cursive {font-size: 58px}
+          .cursive {
+            font-size: 58px;
+          }
         }
 
-        .text {font-size: 16px}
+        .text {
+          font-size: 16px;
+        }
 
-        .button {margin-top: 10px}
+        .button {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -1376,7 +1454,9 @@ footer {
       left: 0;
       top: 130px;
 
-      img {transform: scale(0.9);}
+      img {
+        transform: scale(0.9);
+      }
     }
   }
 
@@ -1384,14 +1464,23 @@ footer {
     display: block;
     box-shadow: none;
 
-    .description, .thumbnail {box-shadow: 0 0 10px #c5c5c5}
+    .description,
+    .thumbnail {
+      box-shadow: 0 0 10px #c5c5c5;
+    }
 
-    .thumbnail {margin-top: 50px}
+    .thumbnail {
+      margin-top: 50px;
+    }
     .description.card-1,
-    .description.card-2, 
+    .description.card-2,
     .description.card-3 {
-      &::before {border: none}
-      &::after {border: none}
+      &::before {
+        border: none;
+      }
+      &::after {
+        border: none;
+      }
     }
   }
 
@@ -1400,7 +1489,9 @@ footer {
       background-color: transparent;
       flex-direction: column;
 
-      .separator {display: none}
+      .separator {
+        display: none;
+      }
 
       input[type="text"] {
         margin: 0;
@@ -1408,16 +1499,21 @@ footer {
         border-radius: 4px;
       }
 
-      input, input[type="text"] {
+      input,
+      input[type="text"] {
         width: 100%;
         margin-top: 30px;
-        &:first-child {margin-top: 0}
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
 
   section.how-we-work {
-    .row .branch .root {height: 70px}
+    .row .branch .root {
+      height: 70px;
+    }
   }
 
   section.travel-with-us {
@@ -1452,7 +1548,7 @@ footer {
   section.client-brands .container .row {
     justify-content: space-between;
   }
-  
+
   section.our-clients-say {
     .client-quote:first-child {
       margin-right: 0;
@@ -1461,14 +1557,16 @@ footer {
   }
 }
 
-
 @media (max-width: 575px) {
   #loader img {
     width: 100px;
     height: 100px;
   }
 
-  section h2 {margin: 40px; font-size: 24px}
+  section h2 {
+    margin: 40px;
+    font-size: 24px;
+  }
 
   .header-background-image {
     background-position: 55%;
@@ -1484,7 +1582,7 @@ footer {
         font-size: 28px;
         letter-spacing: 3px;
         .cursive {
-          font-size: 38px; 
+          font-size: 38px;
           margin-top: 0px;
           line-height: 40px;
         }
@@ -1503,16 +1601,18 @@ footer {
 
     img.big-behind {
       left: 0;
-      top: 0;
+      top: 20px;
       transform: scale(1) translateX(0%);
       width: 100%;
     }
 
     picture.small-front {
       left: 50%;
-      top: 210px;
+      top: 260px;
 
-      img {transform: scale(1) translateX(-50%);}
+      img {
+        transform: scale(1) translateX(-50%);
+      }
     }
   }
 
@@ -1522,13 +1622,19 @@ footer {
     .cards .description {
       padding: 30px;
 
-      .tag, .content, h4 {margin-bottom: 15px}
+      .tag,
+      .content,
+      h4 {
+        margin-bottom: 15px;
+      }
     }
   }
 
   section.travel-with-us {
     min-height: 2300px;
-    h2 {font-size: 22px}
+    h2 {
+      font-size: 22px;
+    }
 
     .cards {
       display: flex;
@@ -1537,8 +1643,10 @@ footer {
       .card {
         width: 70%;
         margin: auto;
-        
-        &:last-child {margin-right: auto}
+
+        &:last-child {
+          margin-right: auto;
+        }
       }
     }
   }
@@ -1546,7 +1654,9 @@ footer {
   section.order .row {
     margin: 0;
 
-    h3 {margin-bottom: 10px}
+    h3 {
+      margin-bottom: 10px;
+    }
 
     .lax {
       transform: none !important;
@@ -1554,7 +1664,9 @@ footer {
   }
 
   section.how-we-work {
-    h2 {font-size: 22px}
+    h2 {
+      font-size: 22px;
+    }
 
     .row .branch .circle {
       width: 150px;
@@ -1575,7 +1687,9 @@ footer {
 
     .column {
       display: block;
-      .photo {margin-bottom: 10px}
+      .photo {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -1630,15 +1744,16 @@ footer {
       row-gap: 20px;
       text-align: center;
 
-      div {justify-content: center;}
+      div {
+        justify-content: center;
+      }
 
-      .copyright {order: 3}
+      .copyright {
+        order: 3;
+      }
     }
   }
 }
-
-
-
 
 body {
   width: 100%;
@@ -1669,7 +1784,7 @@ body {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF; /* A background-color is required */
+  background-color: #fff; /* A background-color is required */
   min-height: 100vh;
 }
 

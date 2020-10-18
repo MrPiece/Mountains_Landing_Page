@@ -3,12 +3,12 @@
 @import url("../fonts/timesnewromanpsmt_bigfontsite.com.ttf");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway&family=Roboto:wght@300;400;900&display=swap");
 @font-face {
-  font-family: 'Open Sans Extrabold';
+  font-family: "Open Sans Extrabold";
   src: url("../fonts/open_sans_extrabold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'League Gothic';
+  font-family: "League Gothic";
   src: url("../fonts/LeagueGothic-Regular.otf") format("truetype");
 }
 
@@ -18,7 +18,9 @@
   src: url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.woff") format("woff"), url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5b63296afacd98ba35ead3350a35eb4d.svg#Bringin") format("svg");
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-shadow: none;
@@ -27,7 +29,7 @@
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 1em;
 }
 
@@ -50,7 +52,7 @@ h1 .cursive {
   letter-spacing: normal;
   font-family: Bringin;
   font-size: 66px;
-  margin-top: -43px;
+  margin-top: -33px;
   margin-left: 7px;
   font-style: normal;
   font-weight: 400;
@@ -411,7 +413,8 @@ section.our-journal .cards .description.card-3 {
           order: 1;
 }
 
-section.our-journal .cards .thumbnail, section.our-journal .cards .description {
+section.our-journal .cards .thumbnail,
+section.our-journal .cards .description {
   position: relative;
 }
 
@@ -838,7 +841,7 @@ section.travel-with-us .cards .card .pricing .old-price {
 section.travel-with-us .cards .card .pricing .new-price {
   color: #ffffff;
   font-size: 26px;
-  font-family: 'Open Sans Extrabold';
+  font-family: "Open Sans Extrabold";
   line-height: 22px;
 }
 
@@ -1275,7 +1278,8 @@ footer .container .clients-count span {
     -webkit-backdrop-filter: brightness(0.85);
             backdrop-filter: brightness(0.85);
   }
-  header .intro .background-man, header .intro .border-bottom {
+  header .intro .background-man,
+  header .intro .border-bottom {
     display: none;
   }
   header .intro .content {
@@ -1292,7 +1296,8 @@ footer .container .clients-count span {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header .intro .content .button, header .intro .content .text {
+  header .intro .content .button,
+  header .intro .content .text {
     margin: auto;
   }
   header .intro .content .text {
@@ -1485,10 +1490,7 @@ footer .container .clients-count span {
             align-items: center;
   }
   header nav.navbar .container .menu {
-    position: absolute;
-    z-index: 5;
-    bottom: 100%;
-    opacity: 0;
+    display: none;
   }
   header nav.navbar .container .hamburger-button {
     display: block;
@@ -1552,7 +1554,8 @@ footer .container .clients-count span {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  section.our-journal .cards .description, section.our-journal .cards .thumbnail {
+  section.our-journal .cards .description,
+  section.our-journal .cards .thumbnail {
     -webkit-box-shadow: 0 0 10px #c5c5c5;
             box-shadow: 0 0 10px #c5c5c5;
   }
@@ -1584,11 +1587,13 @@ footer .container .clients-count span {
     padding: 20px;
     border-radius: 4px;
   }
-  section.order form input, section.order form input[type="text"] {
+  section.order form input,
+  section.order form input[type="text"] {
     width: 100%;
     margin-top: 30px;
   }
-  section.order form input:first-child, section.order form input[type="text"]:first-child {
+  section.order form input:first-child,
+  section.order form input[type="text"]:first-child {
     margin-top: 0;
   }
   section.how-we-work .row .branch .root {
@@ -1673,14 +1678,14 @@ footer .container .clients-count span {
   }
   section.about-us img.big-behind {
     left: 0;
-    top: 0;
+    top: 20px;
     -webkit-transform: scale(1) translateX(0%);
             transform: scale(1) translateX(0%);
     width: 100%;
   }
   section.about-us picture.small-front {
     left: 50%;
-    top: 210px;
+    top: 260px;
   }
   section.about-us picture.small-front img {
     -webkit-transform: scale(1) translateX(-50%);
@@ -1692,7 +1697,9 @@ footer .container .clients-count span {
   section.our-journal .cards .description {
     padding: 30px;
   }
-  section.our-journal .cards .description .tag, section.our-journal .cards .description .content, section.our-journal .cards .description h4 {
+  section.our-journal .cards .description .tag,
+  section.our-journal .cards .description .content,
+  section.our-journal .cards .description h4 {
     margin-bottom: 15px;
   }
   section.travel-with-us {
@@ -1842,7 +1849,7 @@ body {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF;
+  background-color: #fff;
   /* A background-color is required */
   min-height: 100vh;
 }
